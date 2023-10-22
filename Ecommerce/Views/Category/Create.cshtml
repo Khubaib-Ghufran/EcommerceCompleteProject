@@ -19,11 +19,7 @@
                 <span asp-validation-for="DisplayOrder" class="text-danger"></span>
 
             </div>
-            <div class="">
-                <label asp-for="CreatedDateTime"></label>
-                <input asp-for="CreatedDateTime" class="form-control" />
-                <span asp-validation-for="CreatedDateTime" class="text-danger"></span>
-            </div>
+           
 
         </div>
         <div class="row">
@@ -38,3 +34,8 @@
 
 </form>
 
+@section Scripts{ 
+    @{ 
+        <partial name="_ValidationScriptsPartial"></partial>
+    }
+}
